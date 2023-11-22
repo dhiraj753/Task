@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Add Company Section -->
+    <section id="addCompanySection" class="company-section">
+        <h1>Add Company</h1>
+        <form id="addCompanyForm">
+            <label>Company Name:</label>
+            <input type="text" id="companyName" name="companyName">
+
+            <br><br>
+
+            <label>Company Description:</label>
+            <textarea id="companyDescription" name="companyDescription" rows="4"></textarea>
+
+            <br><br>
+
+            <label>Location:</label>
+            <input type="text" id="companyLocation" name="companyLocation">
+            <br><br>
+
+            <button type="button" onclick="addCompany()">Add Company</button>
+        </form>
+    </section>
+
+    <!-- Company List Section -->
+    <section id="companyListSection" class="company-section">
+        <h1>Company List</h1>
+        <ul id="companyList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
